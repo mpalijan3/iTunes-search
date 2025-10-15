@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f8f4fb, #fdeff3);
+  margin: 0;
+  padding: 40px;
+  color: #444;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 18px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border: 1px solid #f3d8e5;
+}
+
+h2 {
+  text-align: center;
+  color: #b84d8e;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1.5px solid #e6bcd2;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #d67fb1;
+  box-shadow: 0 0 5px rgba(214,127,177,0.4);
+}
+
+#message {
+  text-align: center;
+  margin: 10px 0;
+  color: #888;
+  font-style: italic;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  border-bottom: 1px solid #f3e2ea;
+  padding: 8px 0;
+  color: #555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Loader animacija */
+.loader {
+  margin: 15px auto;
+  width: 60px;
+  text-align: center;
+}
+
+.loader span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #d67fb1;
+  border-radius: 50%;
+  margin: 0 3px;
+  animation: blink 1.4s infinite both;
+}
+
+.loader span:nth-child(2) { animation-delay: 0.2s; }
+.loader span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes blink {
+  0%, 80%, 100% { opacity: 0; }
+  40% { opacity: 1; }
+}
+
+.hidden {
+  display: none;
+}
